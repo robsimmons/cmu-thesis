@@ -210,6 +210,7 @@
 % area at the top of the page
 % 1.2 dkoes - made it big and rotated and light
 % 1.3 dkoes - made it small, and unrotated since Jonathan Aldrich complained
+% 1.4 comar - moved it below the page number to avoid problem with synctex
 \RequirePackage{graphicx}
 \RequirePackage{eso-pic}
 \RequirePackage{color}
@@ -218,7 +219,7 @@
 %usage: \draftstamp{date}{label}
 \newcommand{\draftstamp}[2]{\definecolor{DraftGrey}{gray}{0.7}
   \ClearShipoutPicture\AddToShipoutPicture{
-    \begin{minipage}[b][\paperheight][t]{\paperwidth}     
+    \begin{minipage}[b][0.11\paperheight][t]{\paperwidth}     
     \centering
     	\vspace{.4in}
             \textcolor{DraftGrey}{\renewcommand{\baselinestretch}{1.0}\normalsize
